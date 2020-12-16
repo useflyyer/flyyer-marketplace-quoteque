@@ -23,7 +23,7 @@ export default function MainTemplate({ variables }: TemplateProps) {
   return (
     <>
       
-      <Layer className="bg-black" />
+      <Layer className="bg-red-600" />
       <Layer className="flex flex-col justify-end items-start px-12 py-12 text-white">
         <img src={logo} className={classNames("filter-white" /* custom */, "w-36 h-36")} />
         <h1 className="text-6xl mt-4">{title}</h1>
