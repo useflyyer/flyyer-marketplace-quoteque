@@ -26,9 +26,9 @@ export default function MainTemplate({ variables }: TemplateProps) {
         <h1 className="text-2xl mt-1 font-semibold tracking-wide">{quoteTheme}</h1>
       </Layer>
       <Layer>
-      <h1 style={{fontFamily: "Times New Roman"}} className='pt-24 pl-12 text-9xl font-serif font-medium text-white'>
-        "
-      </h1>
+        <h1 style={{fontFamily: "Times New Roman"}} className='pt-24 pl-12 text-9xl font-serif font-medium text-white'>
+          "
+        </h1>
       </Layer>
       <Layer className="flex flex-col justify-start items-start pl-24 lg:pl-32 pt-28 lg:py-20 text-white pr-32 lg:pr-80 tracking-normal">
         <h2 className="text-2xl lg:text-4xl mt-1 lg:mt-10 font-serif font-medium">{quote}</h2>
