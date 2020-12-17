@@ -16,22 +16,29 @@ export default function MainTemplate({ variables }: TemplateProps) {
     quoteTheme = 'The World In 2021',
     author =  'Michael Tubbs',
     authorPosition = 'Mayor of Stockton',
-    title = "Hello world Ignacio!",
     quote = "There is nothing inherently dignified in working two or three jobs, yet still being unable to afford the basics",
-    description = 'This is a description',
   } = variables;
 
   return (
     <>
-      <Layer className="bg-red-600 rounded-lg" />
-      <Layer className="flex flex-col justify-start items-start px-20 py-12 text-white">
-        <h1 className="text-2xl mt-4 font-medium">{quoteTheme}</h1>
+      <Layer className="bg-red-600 rounded-lg" style={{backgroundColor: '#e3120b'}} />
+      <Layer className="flex flex-col justify-start items-start px-16 py-12 text-white">
+        <h1 className="text-xl mt-4 font-semibold tracking-wide">{quoteTheme}</h1>
       </Layer>
-      <Layer className="flex flex-col justify-center items-start px-40 py-12 text-white">
-        <h2 className="text-5xl mt-10 font-serif">{quote}</h2>
-        <h2 className="text-1xl mt-4 font-semibold">{author}</h2>
-        <h2 className="text-1xl mt-4">{authorPosition}</h2>
-        
+      <Layer>
+      <h1 style={{fontFamily: "Times New Roman"}} className='pt-24 pl-12 text-9xl font-serif font-medium text-white'>
+        "
+      </h1>
+      </Layer>
+      <Layer className="flex flex-col justify-start items-start pl-32 py-20 text-white pr-80 tracking-normal">
+        <h2 className="text-4xl mt-10 font-serif font-medium">{quote}</h2>
+        <div>
+          <svg width="5rem" height="5rem">
+            <rect x="0rem" y="4.5rem" width="3rem" height="0.35rem" fill="white"></rect>
+          </svg>
+        </div>
+        <h2 className="text-1xl mt-1 font-semibold">{author}</h2>
+        <h2 className="text-1xl mt-1 font-light">{authorPosition}</h2>
       </Layer>
       <Layer className="flex flex-col justify-end items-end px-20 py-12 text-white">
         <img src={logo} className={classNames("filter-white" /* custom */, "w-36 h-36")} />
