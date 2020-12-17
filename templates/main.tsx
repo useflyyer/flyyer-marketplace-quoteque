@@ -20,15 +20,14 @@ export default function MainTemplate({ variables }: TemplateProps) {
   } = variables;
 
   return (
-    <>
-      <Layer className="bg-red-600 rounded-lg" style={{backgroundColor: '#e3120b'}} />
+    <Layer className="bg-red-600" >
       <Layer className="flex flex-col justify-start items-start px-16 py-12 text-white">
         <h1 className="text-2xl mt-1 font-semibold tracking-wide">{quoteTheme}</h1>
       </Layer>
       <Layer>
-      <h1 style={{fontFamily: "Times New Roman"}} className='pt-24 pl-12 text-9xl font-serif font-medium text-white'>
-        "
-      </h1>
+        <h1 style={{fontFamily: "Times New Roman"}} className='pt-24 pl-12 text-9xl font-serif font-medium text-white'>
+          {`"`}
+        </h1>
       </Layer>
       <Layer className="flex flex-col justify-start items-start pl-24 lg:pl-32 pt-28 lg:py-20 text-white pr-32 lg:pr-80 tracking-normal">
         <h2 className="text-2xl lg:text-4xl mt-1 lg:mt-10 font-serif font-medium">{quote}</h2>
@@ -45,6 +44,6 @@ export default function MainTemplate({ variables }: TemplateProps) {
       <Layer className="flex flex-col justify-end items-end px-20 py-12 text-white">
         <img src={logo} className={classNames("filter-white" /* custom */, "w-36 h-36")} />
       </Layer>
-    </>
+    </Layer>
   );
 }
